@@ -1,6 +1,7 @@
 library(rworldmap)
 library(plotrix)
 #give path to csv file
+# version 1.1
 
 setwd("/path/to/workDirectory/")    #give the path to the work directory where you files are and/or where you would like to output files to go
 inputfile.name = "spicatum_K4_popAverage.csv"
