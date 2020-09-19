@@ -6,8 +6,8 @@ setwd("/path/to/workDirectory/")    #give the path to the work directory where y
 inputfile.name = "spicatum_K4_popAverage.csv"
 outputfile.name="spicatum_K4"
 
-print.label = TRUE
-pieChartSize = 0.4
+print.label = F
+pieChartSize = 0.6
 
 inputfile <- read.csv(inputfile.name,header=FALSE, as.is=TRUE)
 
@@ -26,7 +26,7 @@ plot.piechart <- function(admixData, lab, pCS) {
   #Just make sure the column names in your input csv matches those in the for loop! 
   for (x in 1:nrow(admixData)) {
     floating.pie(admixData[x,2], admixData[x,3], unlist(chart.data[x,]), 
-                 radius=pCS, col=c("blue", "red", "orange", "darkgreen", "purple","brown","black"), lwd = 1, border = bordCol)
+                 radius=pCS, col=c("red", "blue", "orange", "green","purple", "brown","darkgrey", "yellow", "darkgreen", "cyan"), lwd = 1, border = bordCol)
   
   }
   if (lab) {
@@ -44,3 +44,4 @@ dev.off()
 png(filename = paste(outputfile.name,".png",sep=""),width =1000, height = 1000)
 plot.piechart(inputfile,print.label,pieChartSize)
 dev.off()
+
