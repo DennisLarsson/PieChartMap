@@ -56,7 +56,7 @@ while (p<length(coordinates[[1]])){
   o=1
   while (o <= length(popmean)) {output[o+3]=popmean[o];o=o+1}
   cat(file = paste(outputname,"_popAverage.csv",sep=""),
-            x=c(output), append = TRUE,sep = ",",fill = T)
+            x=c(output,"\n"), append = TRUE,sep = ",")
   #print("start")
   #print(AverList)
   #print("end")
