@@ -1,3 +1,5 @@
+# Version 1.1
+
 setwd("/path/to/workDirectory/")    #give the path to the work directory where you files are and/or where you would like to output files to go
 popmap="popmap_spicatum.txt"        #give the name of the popmap if it is in the work directory or the full path if it is somewhere else
 outputname="spicatum_K4"               #give the prefix for all of the output files
