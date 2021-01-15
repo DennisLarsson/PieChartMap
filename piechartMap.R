@@ -38,7 +38,7 @@ plot.piechart <- function(admixData, lab, pCS) {
   }
 }
 
-pdf(file = paste(outputfile.name,".pdf",sep=""),width =10, height = 10)
+pdf(file = paste(outputfile.name,".pdf",sep=""), title = outputfile.name, width =10, height = 10)
 plot.piechart(inputfile,print.label,pieChartSize)
 dev.off()
 
