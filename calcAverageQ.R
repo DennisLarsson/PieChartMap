@@ -19,7 +19,7 @@ if (file.exists(paste(outputname,"_popAverage.csv",sep=""))) {
 }
 
 p=2
-while (p<length(coordinates[[1]])){
+while (p<=length(coordinates[[1]])){
   AverList=list()
   i=1
   #print(p)
